@@ -41,7 +41,7 @@ public class Carro implements Serializable {
 	private List<Reserva> reserva;
 	
 	@ManyToMany(fetch=FetchType.LAZY)
-	@JoinTable(name="carro_opcionais_id"
+	@JoinTable(schema = "locadora",name="carro_opcionais_id" 
 				, joinColumns=@JoinColumn(name="cod_carro")
 				, inverseJoinColumns=@JoinColumn(name="cod_opcionais"))
 	private List<Opcionais> opcionais = new ArrayList<>();

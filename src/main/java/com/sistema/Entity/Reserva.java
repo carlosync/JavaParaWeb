@@ -42,7 +42,7 @@ public class Reserva implements Serializable {
 	private Carro carro;
 	
 	@ManyToOne
-	@JoinColumn(name = "cod_carro")
+	@JoinColumn(name = "cod_cliente")
 	private Cliente cliente;
 	
 	public Long getId() {
